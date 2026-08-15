@@ -6,4 +6,5 @@
 textarea{font:inherit;padding:10px;border-radius:8px;border:1px solid #d9d3c8;resize:vertical}
 #scheduleCostFields{border-top:1px solid var(--line);padding-top:14px}#scheduleCostFields h3{margin:0;font-size:16px}
 .inlineCost{border-top:1px solid var(--line);padding-top:13px}.inlineCost h3{margin:0;font-size:16px}.inlineCost p{margin:8px 0}.inlineCost select{padding:7px}.inlineCost label{display:block}
+.editButton{background:#eee9df;color:var(--ink);font-size:13px;padding:8px 10px;margin-top:10px}.activityLog{border-top:1px solid var(--line);margin-top:18px;padding-top:15px}.activityLog h3{font-size:16px;margin:0 0 8px}.logItem{border-top:1px solid var(--line);padding:9px 0;font-size:13px}.logItem small{display:block;color:var(--muted);margin-top:3px}
 
