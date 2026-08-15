@@ -99,4 +99,5 @@ header p:last-child{display:inline-flex;align-items:center;min-height:25px;paddi
 
 .memberInvite{display:flex;justify-content:center;margin-top:16px;padding-top:14px;border-top:1px solid var(--line)}
 .inviteButton{min-width:210px;background:#e3f0ec;color:#175343;border:1px solid #bdd9ce;box-shadow:none}
+input::placeholder,textarea::placeholder{color:transparent;opacity:0}
 
