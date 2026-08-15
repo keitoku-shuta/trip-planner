@@ -42,8 +42,8 @@ header p:last-child{display:inline-flex;align-items:center;min-height:25px;paddi
   .sectionHead{align-items:center;margin-bottom:13px}
   .sectionHead h2{font-size:18px}
   .textButton{min-height:40px;padding:8px 4px;white-space:nowrap}
-  .timelineControls{display:grid;grid-template-columns:minmax(0,1fr);gap:9px}
-  .timelineControls #datePicker{width:100%;min-height:44px}
+  .timelineControls{display:grid;grid-template-columns:minmax(0,1fr);gap:9px;min-width:0}
+  .timelineControls #datePicker{display:block;box-sizing:border-box;min-width:0;max-width:100%;width:100%;min-height:44px;font-size:16px}
   .timelineControls .viewSwitch{display:grid;grid-template-columns:1fr 1fr;width:100%}
   .viewSwitch button{min-height:42px;padding:9px}
   .event{grid-template-columns:58px minmax(0,1fr);gap:8px;padding:13px 0}
