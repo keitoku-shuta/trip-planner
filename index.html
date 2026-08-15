@@ -10,7 +10,7 @@
   <main id="appMain">
     <section class="card"><div class="sectionHead timelineTitleRow"><h2>タイムライン</h2><button id="openSchedule" class="textButton">＋ 予定を追加</button></div><div class="timelineControls"><input type="date" id="datePicker"></div><div id="stayTimeline" class="stayTimeline"></div><div id="timeline" class="timeline"></div></section>
     <section class="card"><div class="sectionHead"><h2>提案箱</h2><button id="openProposalSmall" class="textButton">＋ 新しい提案</button></div><div id="proposals" class="proposals"></div></section>
-    <section class="card"><div class="sectionHead"><h2>参加者</h2><button id="openMember" class="textButton">＋ 追加</button></div><div id="members" class="members"></div></section>
+    <section class="card"><div class="sectionHead"><h2>参加者</h2><button id="openMember" class="textButton">＋ 追加</button></div><div id="members" class="members"></div><div class="memberInvite"><button id="copyInviteLink" class="inviteButton">招待リンクをコピー</button></div></section>
     <section class="card"><div class="sectionHead"><h2>費用・精算</h2><button id="openExpense" class="textButton">＋ 費用を登録</button></div><div id="expenseSummary" class="expenseSummary"></div><div id="expenses" class="proposals"></div><div id="settlements" class="settlements"></div></section>
     <section class="card tools"><h2>データ</h2><p>端末に保存されます。</p><button id="exportJson" hidden></button><button id="exportIcs">iCalを書き出す</button><label class="fileButton">iCalを読み込む<input id="importIcs" type="file" accept=".ics,text/calendar" hidden></label><button id="exportMyCostCsv">明細をCSV出力</button><div class="activityLog"><h3>操作ログ</h3><div id="activityLogs"></div></div></section>
   </main>
