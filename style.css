@@ -5,4 +5,5 @@
 .stayTimeline{margin:2px 0 14px}.stayLane{border:1px solid #bdd3cb;background:#eff7f3;border-radius:12px;padding:13px;margin-bottom:8px}.stayLane h3{margin:0 0 5px;font-size:16px}.stayLane p{margin:5px 0;font-size:13px;color:#45655c}.stayLabel{font-size:11px;font-weight:700;letter-spacing:.08em;color:#287661}
 textarea{font:inherit;padding:10px;border-radius:8px;border:1px solid #d9d3c8;resize:vertical}
 #scheduleCostFields{border-top:1px solid var(--line);padding-top:14px}#scheduleCostFields h3{margin:0;font-size:16px}
+.inlineCost{border-top:1px solid var(--line);padding-top:13px}.inlineCost h3{margin:0;font-size:16px}.inlineCost p{margin:8px 0}.inlineCost select{padding:7px}.inlineCost label{display:block}
 
