@@ -6,7 +6,12 @@
 </head>
 <body>
   <header id="siteHeader"><div><p class="eyebrow">GROUP TRIP PLANNER</p><h1 id="tripTitle">みんなの旅</h1><p id="tripDates" hidden></p></div><button id="identityButton" class="identity">操作中の参加者</button></header>
-  <section id="welcomeScreen" class="welcome" hidden><div class="welcomeInner"><p class="eyebrow">PLAN TOGETHER, AT YOUR PACE</p><h2>旅の予定を、<br>みんなでひとつに。</h2><p>別行動も、費用も、集合も。グループ旅行の予定を、同じタイムラインで整理します。</p><div class="welcomeActions"><button id="openTripSetup" class="primary">新しい旅行をつくる</button><button id="openJoinInfo" class="welcomeSecondary">招待リンクで参加</button></div><small>アカウント登録は不要です。</small></div></section>
+  <section id="welcomeScreen" class="welcome" hidden>
+    <div class="homeNav"><a class="homeBrand" href="./"><span></span>Trip Together</a><a href="terms.html">利用規約</a></div>
+    <div class="welcomeInner"><p class="eyebrow">PLAN TOGETHER, AT YOUR PACE</p><h2>旅の予定を、<br>みんなでひとつに。</h2><p>別行動も、費用も、集合も。グループ旅行の予定を、同じタイムラインで整理します。</p><div class="welcomeActions"><button id="openTripSetup" class="primary">無料ではじめる</button><button id="openJoinInfo" class="welcomeSecondary">招待リンクで参加</button></div><small>アカウント登録なし・すぐに共有できます。</small></div>
+    <div class="homeFeatures"><article><i>⌁</i><h3>みんなの予定を一画面に</h3><p>全員行動も別行動も、時間軸と参加者別の表示で迷いません。</p></article><article><i>¥</i><h3>費用と精算をすっきり</h3><p>均等割りも個別負担も。誰が誰へ払うかまで整理できます。</p></article><article><i>↗</i><h3>リンクひとつで共有</h3><p>アカウント登録は不要。招待リンクからそのまま旅行に参加できます。</p></article></div>
+    <section class="homeSteps"><p class="eyebrow">HOW IT WORKS</p><h2>旅が決まるまで、3ステップ。</h2><div><article><b>1</b><h3>旅行をつくる</h3><p>旅行名とあなたの名前を入れるだけ。</p></article><article><b>2</b><h3>仲間を招待</h3><p>招待リンクをグループに送ります。</p></article><article><b>3</b><h3>予定を決める</h3><p>提案、参加、費用をみんなで更新。</p></article></div></section>
+  </section>
   <main id="appMain">
     <section class="card"><div class="sectionHead timelineTitleRow"><h2>タイムライン</h2><button id="openSchedule" class="textButton">＋ 予定を追加</button></div><div class="timelineControls"><input type="date" id="datePicker"></div><div id="stayTimeline" class="stayTimeline"></div><div id="timeline" class="timeline"></div></section>
     <section class="card"><div class="sectionHead"><h2>提案箱</h2><button id="openProposalSmall" class="textButton">＋ 新しい提案</button></div><div id="proposals" class="proposals"></div></section>
