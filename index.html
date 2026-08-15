@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Trip Together</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><div><p class="eyebrow">GROUP TRIP PLANNER</p><h1 id="tripTitle">みんなの旅</h1><p id="tripDates">日程を設定して始めよう</p></div><button id="identityButton" class="identity">👤 操作中：未選択</button></header>
+  <main>
+    <section class="hero"><p class="eyebrow">TODAY'S DECISIONS</p><h2>決めたいこと <span id="proposalCount">0</span>件</h2><p>提案は全員を拘束しません。参加したい人だけで、そのまま予定にできます。</p><button id="openProposal" class="primary">＋ 提案を追加</button></section>
+    <section class="card"><div class="sectionHead"><h2>タイムライン</h2><input type="date" id="datePicker"></div><div id="timeline" class="timeline"></div></section>
+    <section class="card"><div class="sectionHead"><h2>提案箱</h2><button id="openProposalSmall" class="textButton">＋ 新しい提案</button></div><div id="proposals" class="proposals"></div></section>
+    <section class="card"><div class="sectionHead"><h2>参加者</h2><button id="openMember" class="textButton">＋ 追加</button></div><div id="members" class="members"></div></section>
+    <section class="card tools"><h2>データ</h2><p>端末に保存されます。共有前のバックアップや、他の端末への引っ越しに使えます。</p><button id="exportJson">バックアップを書き出す</button><label class="fileButton">バックアップを読み込む<input id="importJson" type="file" accept="application/json" hidden></label></section>
+  </main>
+  <dialog id="memberDialog"><form method="dialog" id="memberForm"><button class="close" value="cancel">×</button><h2>参加者を追加</h2><label>名前<input required name="name" placeholder="例：しゅうた"></label><label>色<input name="color" type="color" value="#ef8354"></label><button class="primary" value="default">追加する</button></form></dialog>
+  <dialog id="proposalDialog"><form method="dialog" id="proposalForm"><button class="close" value="cancel">×</button><h2>予定を提案</h2><label>何をしたい？<input required name="title" placeholder="例：八重山そばを食べる"></label><label>日付<input required name="date" type="date"></label><div class="row"><label>開始時刻<input name="start" type="time"></label><label>終了時刻<input name="end" type="time"></label></div><label>場所（任意）<input name="place" placeholder="例：市街地"></label><fieldset><legend>参加候補</legend><div id="participantChoices"></div></fieldset><button class="primary" value="default">提案する</button></form></dialog>
+  <dialog id="identityDialog"><form method="dialog" id="identityForm"><button class="close" value="cancel">×</button><h2>誰として操作しますか？</h2><p>この端末での操作名を選びます。アカウントは不要です。</p><div id="identityChoices"></div></form></dialog>
+  <script src="app.js"></script>
+</body></html>
+
