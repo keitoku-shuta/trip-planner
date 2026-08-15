@@ -53,7 +53,7 @@ function render(){
 }
 function choices(container,checked=true){container.innerHTML=state.members.map(m=>`<label class="choice"><input type="checkbox" name="participants" value="${m.id}" ${checked?'checked':''}>${m.name}</label>`).join('')}
 $('#openMember').onclick=()=>byId('memberDialog').showModal();
-$('#memberForm').addEventListener('submit',e=>{e.preventDefault();let d=new FormData(e.target),name=d.get('name');state.members.push({id:crypto.randomUUID(),name,color:d.get('color')});log('参加者を追加',''+name);e.target.reset();byId('memberDialog').close();save()});
+$('#memberForm').addEventListener('submit',e=>{e.preventDefault();let d=new FormData(e.target),name=d.get('name'),colors=['#e75d38','#2a9d8f','#4c78c2','#7a5bbb','#c46725','#687582'];state.members.push({id:crypto.randomUUID(),name,color:colors[state.members.length%colors.length]});log('参加者を追加',''+name);e.target.reset();byId('memberDialog').close();save()});
 $('#openTripSetup').onclick=()=>byId('tripSetupDialog').showModal();
 $('#openJoinInfo').onclick=()=>alert('旅行の招待リンクを開くと、参加画面が表示されます。');
 $('#tripSetupForm').addEventListener('submit',async e=>{e.preventDefault();const d=new FormData(e.target),id=crypto.randomUUID(),name=d.get('personName');state.trip={title:d.get('title'),dates:'日程未設定',onboarded:true,researchConsent:d.get('researchConsent')==='on'};state.members=[{id,name,color:'#e75d38'}];state.current=id;state.proposals=[];state.events=[];log('旅行を作成',state.trip.title);try{await createRemoteTrip()}catch(error){alert('共有旅行の作成に失敗しました：'+error.message)}byId('tripSetupDialog').close();save()});
