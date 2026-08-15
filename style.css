@@ -100,4 +100,5 @@ header p:last-child{display:inline-flex;align-items:center;min-height:25px;paddi
 .memberInvite{display:flex;justify-content:center;margin-top:16px;padding-top:14px;border-top:1px solid var(--line)}
 .inviteButton{min-width:210px;background:#e3f0ec;color:#175343;border:1px solid #bdd9ce;box-shadow:none}
 input::placeholder,textarea::placeholder{color:transparent;opacity:0}
+.siteFooter{max-width:860px;margin:0 auto;padding:0 20px 28px;text-align:center;font-size:13px}.siteFooter a{color:var(--muted);text-decoration:none}.siteFooter a:hover{text-decoration:underline}.termsPage{max-width:760px}.terms h2{margin:26px 0 8px;font-size:18px}.terms p{line-height:1.85}.terms .meta{color:var(--muted);font-size:13px}.termsBack{text-decoration:none;display:inline-flex;align-items:center}@media(max-width:560px){.siteFooter{padding:0 14px 24px}.termsPage{padding:12px 10px 28px}.terms h2{font-size:17px;margin-top:23px}.terms p{line-height:1.78}.termsBack{width:auto;min-width:auto}}
 
