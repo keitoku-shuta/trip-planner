@@ -7,4 +7,5 @@ textarea{font:inherit;padding:10px;border-radius:8px;border:1px solid #d9d3c8;re
 #scheduleCostFields{border-top:1px solid var(--line);padding-top:14px}#scheduleCostFields h3{margin:0;font-size:16px}
 .inlineCost{border-top:1px solid var(--line);padding-top:13px}.inlineCost h3{margin:0;font-size:16px}.inlineCost p{margin:8px 0}.inlineCost select{padding:7px}.inlineCost label{display:block}
 .editButton{background:#eee9df;color:var(--ink);font-size:13px;padding:8px 10px;margin-top:10px}.activityLog{border-top:1px solid var(--line);margin-top:18px;padding-top:15px}.activityLog h3{font-size:16px;margin:0 0 8px}.logItem{border-top:1px solid var(--line);padding:9px 0;font-size:13px}.logItem small{display:block;color:var(--muted);margin-top:3px}
+.typeBadge{display:inline-block;border-radius:10px;padding:2px 7px;margin-right:5px;font-size:11px;font-weight:700;color:#fff}.type-transport{background:#4476b9}.type-stay{background:#278468}.type-meal{background:#c46725}.type-attraction{background:#7a5bbb}.type-other{background:#687582}.type-activity{background:#e75d38}
 
