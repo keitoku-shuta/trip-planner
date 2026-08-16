@@ -8,7 +8,7 @@
   <header id="siteHeader"><div><p class="eyebrow">たびぷ！！</p><h1 id="tripTitle">みんなの旅</h1><p id="tripDates" hidden></p></div><div class="headerActions"><button id="openTripSetupHeader" class="newTripButton">新しい旅行を作成</button><button id="identityButton" class="identity">操作中の参加者</button></div></header>
   <section id="welcomeScreen" class="welcome" hidden>
     <div class="homeNav"><a class="homeBrand" href="./"><span></span>たびぷ！！</a><a href="terms.html">利用規約</a></div>
-    <div class="welcomeInner"><p class="eyebrow">たびぷ！！</p><h2>旅の予定を、<br>みんなでひとつに。</h2><p>別行動も、費用も、集合も。グループ旅行の予定を、同じタイムラインで整理します。</p><div class="welcomeActions"><button id="openTripSetup" class="primary">無料ではじめる</button><button id="openJoinInfo" class="welcomeSecondary">招待リンクで参加</button></div><small>アカウント登録なし・すぐに共有できます。</small></div>
+    <div class="welcomeInner"><p class="eyebrow">たびぷ！！</p><h2>旅の予定を、<br>みんなでひとつに。</h2><p>別行動も、費用も、集合も。グループ旅行の予定を、同じタイムラインで整理します。</p><div class="welcomeActions"><button id="openTripSetup" class="primary">無料ではじめる</button></div><small>アカウント登録なし・すぐに共有できます。</small></div>
     <div class="homeFeatures"><article><i>⌁</i><h3>みんなの予定を一画面に</h3><p>全員行動も別行動も、時間軸と参加者別の表示で迷いません。</p></article><article><i>¥</i><h3>費用と精算をすっきり</h3><p>均等割りも個別負担も。誰が誰へ払うかまで整理できます。</p></article><article><i>↗</i><h3>リンクひとつで共有</h3><p>アカウント登録は不要。招待リンクからそのまま旅行に参加できます。</p></article></div>
     <section class="homeSteps"><p class="eyebrow">HOW IT WORKS</p><h2>旅が決まるまで、3ステップ。</h2><div><article><b>1</b><h3>旅行をつくる</h3><p>旅行名とあなたの名前を入れるだけ。</p></article><article><b>2</b><h3>仲間を招待</h3><p>招待リンクをグループに送ります。</p></article><article><b>3</b><h3>予定を決める</h3><p>提案、参加、費用をみんなで更新。</p></article></div></section>
   </section>
@@ -28,5 +28,4 @@
   <dialog id="expenseDialog"><form method="dialog" id="expenseForm"><button class="close" value="cancel">×</button><h2>費用を登録</h2><label>内容<input required name="title" placeholder="例：レンタカー"></label><div class="row"><label>金額（円）<input required name="amount" min="1" type="number" inputmode="numeric"></label><label>支払った人<select required name="payer" id="payerChoices"></select></label></div><label>分け方<select name="method" id="splitMethod"><option value="equal">均等割り</option><option value="amount">金額を個別指定</option><option value="ratio">割合を指定</option></select></label><fieldset><legend>負担する人</legend><div id="expenseParticipants"></div></fieldset><div id="splitInputs"></div><p id="splitNotice" class="validation"></p><button class="primary" value="default">登録する</button></form></dialog>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script><script src="supabase-config.js?v=tabipu-20260816"></script><script src="app.js?v=tabipu-20260816"></script>
 </body></html>
-
 
