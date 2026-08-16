@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <title>たびぷ！！ | みんなの旅を、ひとつに。</title><link rel="stylesheet" href="style.css?v=tabipu-20260816">
-  <script>if(location.search)location.replace('app.html'+location.search+location.hash);</script>
+  <script>const p=new URLSearchParams(location.search);if(p.has('trip')||p.has('invite')||p.has('start'))location.replace('app.html'+location.search+location.hash);</script>
 </head>
 <body class="homeOnly">
   <section class="welcome">
